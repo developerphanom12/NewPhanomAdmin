@@ -1,0 +1,98 @@
+@extends('layouts.app')
+
+@section('title', 'Dashboard - Kabby Admin')
+
+@section('content')
+
+<div class="position-relative iq-banner">
+    <div class="iq-navbar-header" style="height: 215px;">
+        <div class="container-fluid iq-container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="d-flex justify-content-between align-items-center flex-wrap">
+                        <div>
+                            <h1>Welcome to Kabby Admin!</h1>
+                            <p>Create your Currencies.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="iq-header-img">
+            <img src="{{asset('images/dashboard/top-header.png')}}" alt="header" class="theme-color-default-img img-fluid w-100 h-100 animated-scaleX">
+            <img src="{{asset('images/dashboard/top-header1.png')}}" alt="header" class="theme-color-purple-img img-fluid w-100 h-100 animated-scaleX">
+            <img src="{{asset('images/dashboard/top-header2.png')}}" alt="header" class="theme-color-blue-img img-fluid w-100 h-100 animated-scaleX">
+            <img src="{{asset('images/dashboard/top-header3.png')}}" alt="header" class="theme-color-green-img img-fluid w-100 h-100 animated-scaleX">
+            <img src="{{asset('images/dashboard/top-header4.png')}}" alt="header" class="theme-color-yellow-img img-fluid w-100 h-100 animated-scaleX">
+            <img src="{{asset('images/dashboard/top-header5.png')}}" alt="header" class="theme-color-pink-img img-fluid w-100 h-100 animated-scaleX">
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid content-inner mt-n5 py-0">
+    <div>
+        <div class="row">
+            <div class="col-sm-12 col-lg-12">
+                <div class="card">
+                    <div class="card-header d-flex justify-content-between">
+                        <div class="header-title">
+                            <h4 class="card-title">Create Currencies</h4>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label" for="validationDefault01">Name</label>
+                                    <input type="text" class="form-control" id="validationDefault01" required>
+                                </div>
+
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label" for="validationDefault01">Code</label>
+                                    <input type="text" class="form-control" id="validationDefault01" required>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label" for="validationDefault01">Symbol</label>
+                                    <input type="text" class="form-control" id="validationDefault01" required>
+                                </div>
+
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label" for="validationDefault01">Digit After Decimal Point</label>
+                                    <input type="text" class="form-control" id="validationDefault01" required>
+                                </div>
+                            </div>
+
+                            <div class="checkbox mb-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3">
+                                    <label class="form-check-label" for="flexCheckDefault3">
+                                        Symbol At Right
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3">
+                                    <label class="form-check-label" for="flexCheckDefault3">
+                                        Active
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <button class="btn btn-primary" type="submit">Save</button>
+                                <a href="">
+                                    <button type="button" class="btn btn-light">Back</button>
+                                </a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </div>
+</div>
+
+@endsection
